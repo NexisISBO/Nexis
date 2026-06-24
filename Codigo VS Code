@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Hospital.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital de Clínicas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #f5f7fa;
+        }
+
+        .navbar{
+            background-color: #005792;
+        }
+
+        .hero{
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .card-module{
+            transition: 0.3s;
+        }
+
+        .card-module:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            background-color: #005792;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+            Hospital de Clínicas
+        </span>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1 class="display-5 fw-bold">
+        Sistema Integral de Gestión Hospitalaria
+    </h1>
+
+    <p class="lead">
+        Plataforma para la gestión documental de pacientes y
+        seguimiento de ambulancias.
+    </p>
+</section>
+
+<div class="container">
+
+    <div class="row g-4">
+
+        
+
+        <div class="col-md-6">
+            <div class="card card-module h-100">
+                <div class="card-body">
+
+                    <h3 class="card-title">
+                         Gestión Documental
+                    </h3>
+
+                    <p class="card-text">
+                        Permite cargar, administrar y compartir
+                        documentación médica y administrativa
+                        mediante códigos QR.
+                    </p>
+
+                    <ul>
+                        <li>Alta de documentos</li>
+                        <li>Generación de QR</li>
+                        <li>Acceso para pacientes</li>
+                        <li>Encuestas de satisfacción</li>
+                    </ul>
+
+                    <a href="documentos.php"
+                       class="btn btn-primary">
+                        Ingresar
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="col-md-6">
+            <div class="card card-module h-100">
+                <div class="card-body">
+
+                    <h3 class="card-title">
+                        Estado De Ambulancias 
+                    </h3>
+
+                    <p class="card-text">
+                        Gestión y seguimiento de traslados,
+                        vehículos y personal asignado.
+                    </p>
+
+                    <ul>
+                        <li>Registro de traslados</li>
+                        <li>Asignación de ambulancias</li>
+                        <li>Control de estados</li>
+                    </ul>
+
+                    <a href="ambulancias.php"
+                       class="btn btn-success">
+                        Ingresar
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+     <?php echo date("Y"); ?> 
+    Hospital de Clínicas 
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
